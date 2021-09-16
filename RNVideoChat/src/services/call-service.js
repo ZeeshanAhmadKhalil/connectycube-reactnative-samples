@@ -23,7 +23,8 @@ export default class CallService {
 
   getUserById = (userId, key) => {
     const user = users.find(user => user.id == userId);
-
+    //console.log("USER")
+    //console.log(user)
     if (typeof key === 'string') {
       return user[key];
     }
